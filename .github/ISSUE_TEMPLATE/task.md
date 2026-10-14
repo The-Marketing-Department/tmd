@@ -8,9 +8,7 @@ type: Task
 
 **Owner:** 
 **Support:** 
-**To be reviewed by:** 
 **Due:** 
-**Estimate:** h
 
 ## What
 
