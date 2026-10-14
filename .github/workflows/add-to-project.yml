@@ -1,0 +1,52 @@
+name: Add issues to project
+
+# Adds every new issue to the TMD Marketing project and sets its Status to Backlog.
+# Needs a repository secret PROJECTS_TOKEN: a personal access token that can
+# write to organization projects (classic token with the "project" and "repo"
+# scopes, or a fine-grained token with org Projects read/write and repo Issues read).
+
+on:
+  issues:
+    types: [opened, transferred]
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PROJECTS_TOKEN }}
+      OWNER: ${{ github.repository_owner }}
+      PROJECT_TITLE: TMD Marketing
+      STATUS: Backlog
+      ISSUE_URL: ${{ github.event.issue.html_url }}
+    steps:
+      - name: Add issue and set Status
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::warning::The PROJECTS_TOKEN secret is not set, so this issue was not added to the project"
+            exit 0
+          fi
+
+          project=$(gh project list --owner "$OWNER" --limit 100 --format json \
+            | jq -c --arg t "$PROJECT_TITLE" '.projects[] | select(.title == $t)')
+          if [ -z "$project" ]; then
+            echo "::error::No project titled '$PROJECT_TITLE' found for $OWNER"
+            exit 1
+          fi
+          number=$(jq -r .number <<<"$project")
+          project_id=$(jq -r .id <<<"$project")
+
+          item_id=$(gh project item-add "$number" --owner "$OWNER" --url "$ISSUE_URL" --format json | jq -r .id)
+
+          status=$(gh project field-list "$number" --owner "$OWNER" --format json \
+            | jq -c '.fields[] | select(.name == "Status")')
+          field_id=$(jq -r .id <<<"$status")
+          option_id=$(jq -r --arg s "$STATUS" '.options[] | select(.name == $s) | .id' <<<"$status")
+          if [ -z "$option_id" ]; then
+            echo "::error::The Status field has no '$STATUS' option"
+            exit 1
+          fi
+
+          gh project item-edit --id "$item_id" --project-id "$project_id" \
+            --field-id "$field_id" --single-select-option-id "$option_id"
