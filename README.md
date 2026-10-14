@@ -15,8 +15,8 @@ GitHub replaces Asana (and WhatsApp task lists) for task tracking. It costs less
 
 | Where | What lives there |
 |---|---|
-| `the-marketing-dept/tmd` (this repo) | TMD's own operations: website, LinkedIn, SEO/GEO, internal systems, team process. Tracked on the **TMD Marketing** project |
-| `the-marketing-dept/hotvi` | Everything for the HOT (Honoring Our Truth) menopause clinic project, tracked on the **HOTVI Marketing** project |
+| `The-Marketing-Department/tmd` (this repo) | TMD's own operations: website, LinkedIn, SEO/GEO, internal systems, team process. Tracked on the **TMD Marketing** project |
+| `The-Marketing-Department/hotvi` | Everything for the HOT (Honoring Our Truth) menopause clinic project, tracked on the **HOTVI Marketing** project |
 | One repo per client | New client projects get their own repo and board, set up the same way as `hotvi` |
 
 ### The Rules
@@ -40,7 +40,7 @@ GitHub replaces Asana (and WhatsApp task lists) for task tracking. It costs less
 
 ### Setting Up a Kanban Board (one time per repo)
 
-1. On GitHub, go to the organization **the-marketing-dept**, open **Projects**, and click **New project**.
+1. On GitHub, go to the organization **The-Marketing-Department**, open **Projects**, and click **New project**.
 2. Choose the **Board** template. Name it after the work it tracks (for example "HOTVI Marketing" or "TMD Marketing").
 3. In the project's **Settings**, find **Status** and set the columns: Backlog, This Week, In Progress, Blocked, In Review, Paused, Done.
 4. Under **Workflows**, turn on **Auto-add to project** for the repo (filter `is:issue`), and **Item closed → Done**.
