@@ -15,8 +15,8 @@ GitHub replaces Asana (and WhatsApp task lists) for task tracking. It costs less
 
 | Where | What lives there |
 |---|---|
-| `the-marketing-dept/tmd` (this repo) | TMD's own operations: website, LinkedIn, SEO/GEO, internal systems, team process. Tracked on the **TMD Marketing** project |
-| `the-marketing-dept/hotvi` | Everything for the HOT (Honoring Our Truth) menopause clinic project, tracked on the **HOTVI Marketing** project |
+| `The-Marketing-Department/tmd` (this repo) | TMD's own operations: website, LinkedIn, SEO/GEO, internal systems, team process. Tracked on the **TMD Marketing** project |
+| `The-Marketing-Department/hotvi` | Everything for the HOT (Honoring Our Truth) menopause clinic project, tracked on the **HOTVI Marketing** project |
 | One repo per client | New client projects get their own repo and board, set up the same way as `hotvi` |
 
 ### The Rules
@@ -40,11 +40,13 @@ GitHub replaces Asana (and WhatsApp task lists) for task tracking. It costs less
 
 ### Setting Up a Kanban Board (one time per repo)
 
-1. On GitHub, go to the organization **the-marketing-dept**, open **Projects**, and click **New project**.
+1. On GitHub, go to the organization **The-Marketing-Department**, open **Projects**, and click **New project**.
 2. Choose the **Board** template. Name it after the work it tracks (for example "HOTVI Marketing" or "TMD Marketing").
 3. In the project's **Settings**, find **Status** and set the columns: Backlog, This Week, In Progress, Blocked, In Review, Paused, Done.
-4. Under **Workflows**, turn on **Auto-add to project** for the repo (filter `is:issue`), and **Item closed → Done**.
-5. Click **Add item** and add the existing issues from the repo, then drag each one to the column that matches its `status:` label.
+4. In the repo, open the **Projects** tab and click **Link a project** to link the board.
+5. Under the board's **Workflows**, turn on **Item added to project → Backlog** and **Item closed → Done**.
+6. Copy `.github/workflows/add-to-project.yml` from this repo into the new repo and change `PROJECT_TITLE` to the board's name. It adds every new issue to the board in Backlog. It needs the `PROJECTS_TOKEN` secret, either as an organization secret the new repo can use or as a secret on the repo itself.
+7. Click **Add item** and add the existing issues from the repo, then drag each one to the column that matches its `status:` label.
 
 ---
 
