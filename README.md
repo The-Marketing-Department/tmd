@@ -83,7 +83,7 @@ Zoom transcripts go in the Zoom transcripts folder on the access@tmdvi.com Drive
 
 - Blog migration to the new Showit site, and the site is live (Gella)
 - Website error fixes, including the duplicate "3" in the services numbering (Trixie)
-- Decision to replace Vaibhav with Greth for LinkedIn outreach. Greth has the LinkedIn outreach SOP.
+- Decision to replace Vaibhav with Greth for LinkedIn outreach. Greth has the LinkedIn Outreach SOP (v2, 13 Oct), which tracks daily activity. Outcome KPIs are still to be added (issue #4).
 
 ---
 
@@ -96,7 +96,7 @@ Every item below is an issue in this repo.
 | Create the "hot" Slack channel and add the team | Trixie | Wed 14 Oct | This week |
 | Check access to Zoom meeting notes and tell Quiana | Trixie | Wed 14 Oct | This week |
 | Add the Claude upgrade note to the working document | Trixie | Fri 16 Oct | This week |
-| Confirm the LinkedIn outreach SOP includes KPIs, and add them if missing | Trixie | Fri 16 Oct | This week |
+| Add outcome KPIs and a pivot rule to the LinkedIn Outreach SOP (it tracks activity only) | Trixie | Fri 16 Oct | This week |
 | Copy Vaibhav-owned outreach docs into the TMD Drive before his access ends | Trixie | Fri 16 Oct | This week |
 | Set up the GitHub workflow and demo it at the all-hands meeting | Trixie | Wed 21 Oct | In progress |
 | Weekly website QA (links, forms, errors, desktop and mobile) | Gella | Every Friday | Recurring |
