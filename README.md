@@ -67,7 +67,7 @@ GitHub replaces Asana (and WhatsApp task lists) for task tracking. It costs less
 | Person | Role | Weekly hours | Reports to |
 |---|---|---|---|
 | Quiana Adams | Founder. Strategy, client relationships, final approvals | | |
-| Trixie | Marketing and Operations Manager. Planning, coordination, funnel and systems, QC and brand review | ~20 | Quiana |
+| Trixie | Marketing and Operations Manager. Strategy, approvals, QC and brand review. Delegates execution to Gella and Greth | ~15 | Quiana |
 | Gella | Marketing assistant. Access, inventories, weekly website QA, audit support | ~30 | Trixie |
 | Greth | Social media, content, LinkedIn outreach (replacing Vaibhav) | ~40 | Quiana |
 | Tamesh | Web and graphic design. Supplies wireframes and the look; the team builds in Squarespace | 50 a month (Quiana's retainer, no quotes needed) | Quiana |
