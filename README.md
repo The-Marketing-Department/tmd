@@ -3,7 +3,7 @@
 The Marketing Department (TMD), tmdvi.com. Operations, planning and task tracking for TMD's own work and its client projects.
 
 **Maintained by:** Trixie (Marketing and Operations Manager)
-**Last updated:** Wednesday 14 October 2026
+**Last updated:** Friday 16 October 2026
 
 Priorities, tasks, paused work and completed work are tracked on the GitHub projects (**TMD Marketing** and **HOTVI Marketing**), not in this README.
 
@@ -50,6 +50,18 @@ GitHub replaces Asana (and WhatsApp task lists) for task tracking. It costs less
 
 ---
 
+## Tools and Access
+
+| Tool | How we use it |
+|---|---|
+| Google Workspace (access@tmdvi.com) | Files, Drive and client intake. Client questionnaires are Google Forms, because clients outside our organization can't fill in Claude artifacts. Responses notify access@ and Trixie relays them |
+| Metricool | Social scheduling. access@tmdvi.com is a manager. Greth loads approved posts, Quiana approves there |
+| LastPass | Every shared login, including contractor access (for example LinkedIn). Share without showing the password, and remove the share when the work ends |
+| HoneyBook | Proposals and contracts once a lead says yes |
+| TMD lead tracker sheet | The lead gen pipeline, until we have about 20 active conversations at once |
+
+---
+
 ## Team and Capacity
 
 | Person | Role | Weekly hours | Reports to |
@@ -58,7 +70,7 @@ GitHub replaces Asana (and WhatsApp task lists) for task tracking. It costs less
 | Trixie | Marketing and Operations Manager. Planning, coordination, funnel and systems, QC and brand review | ~20 | Quiana |
 | Gella | Marketing assistant. Access, inventories, weekly website QA, audit support | ~30 | Trixie |
 | Greth | Social media, content, LinkedIn outreach (replacing Vaibhav) | ~40 | Quiana |
-| Tamesh | Web and graphic design | As needed | Quiana |
+| Tamesh | Web and graphic design. Supplies wireframes and the look; the team builds in Squarespace | 50 a month (Quiana's retainer, no quotes needed) | Quiana |
 
 ### Meeting Cadence
 
@@ -79,4 +91,4 @@ Zoom transcripts go in the Zoom transcripts folder on the access@tmdvi.com Drive
 - **Title case** in headings, applied consistently.
 - **Check desktop and mobile separately.** Every time.
 - **No em dashes** in written deliverables.
-- **Track hours per task.** If a task heads more than 20% over its estimate, stop and tell Trixie.
+- **Track hours per client and per task.** If a task heads more than 20% over its estimate, stop and tell Trixie.
